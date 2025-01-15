@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <link rel="stylesheet"  type="text/css" href="style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Fascinating World of Octopuses</title>
 </head>
-
 <body>
     <!-- Header Section -->
     <div id="header">
+        <!-- center title -->
         <h1>The Fascinating World of Octopuses</h1>
-        <p>Welcome to this intriguing corner of the internet!</p>
+        <style>
+            h1 {
+                text-shadow: 2px 2px 5px dimgray;
+            }
+        </style>
+        <p>
+            <span class="special">Welcome to this intriguing corner of the internet!</span>
+        </p>
+        <style>
+             p{
+                text-align: left;
+                }
+        </style> 
     </div>
 
     <!-- Main Content -->
     <div id="main-content">
 
+        <div class = "intro-quiz-section">
         <!-- Introduction -->
         <h2>Introduction</h2>
+        <style>
+            h2 {
+                text-transform: uppercase;
+                display: inline-block;
+                border-bottom: 2px solid rgb(98, 199, 233);
+                width: 50px; /*oddly the length of the border */
+                margin-bottom: 5px; /*  spacing between */
+                margin-top: 30px; /* top and bottom */
+                white-space: nowrap; /* prevent wrapping */
+            }
+        </style>
         <p>
             Octopuses are among the most fascinating creatures in the ocean.
             They are known for their intelligence and remarkable adaptability.
@@ -25,11 +50,25 @@
 
         <!-- Amazing Facts -->
         <h3>Amazing Facts</h3>
+        <style>
+            h3 {
+                text-transform: uppercase;
+            }
+        </style>
         <!-- Unordered list -->
         <ul>
             <li>They have three hearts.</li>
             <li>They can change color.</li>
             <li>They are masters of camouflage.</li>
+        </ul>
+        <style>
+            ul {
+            list-style-type: disc;
+            }
+            ul li::marker {
+            color: rgb(98, 199, 233);
+            }
+        </style>
         </ul>
 
         <!-- Anatomy -->
@@ -44,36 +83,44 @@
         <!-- Ordered list -->
         <ol>
             <li>Squid</li>
+            <ul> </ul>
             <li>Cuttlefish</li>
+            <ul> </ul>
             <li>Nautilus</li>
+           
         </ol>
+
 
         <!-- External Resources -->
         <h6>External Resources</h6>
         <p>
             For more information, visit these websites:
-            <a href="https://www.oceana.org/" target="_blank">Oceana</a> |
-            <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+            <a style="color:rgb(67, 153, 181);" href="https://www.oceana.org/" target="_blank">Oceana</a> |
+            <a style = "color:rgb(67, 153, 181);" href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
         </p>
 
         <!-- Fun Experiment: Octopus Quiz -->
         <div id="quiz-section">
-
-            <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
-
-            <h2>Octopus Quiz</h2>
-            <form action="/submit-quiz" method="POST">
-                <!-- Question 1 -->
-                <label for="question1">How many hearts does an octopus have?</label>
-                <input type="text" id="question1" name="question1"><br>
-
-                <!-- Question 2 -->
-                <label for="question2">Can octopuses change color? (Yes/No)</label>
-                <input type="text" id="question2" name="question2"><br>
-
-                <input type="submit" value="Submit Quiz">
-            </form>
+            <div class="quiz-header">
+                <h2>Octopus Quiz</h2>
+                <!-- Image -->
+                <img src="octopus-image.png" alt="Image of an octopus" class="left-aligned">
+            </div>
+            <div class="quiz-content">
+                <form action="/submit-quiz" method="POST">
+                    <!-- Question 1 -->
+                    <div class="question">
+                        <label for="question1">How many hearts does an octopus have?</label>
+                        <input type="text" id="question1" name="question1">
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="question">
+                        <label for="question2">Can octopuses change color? (Yes/No)</label>
+                        <input type="text" id="question2" name="question2">
+                    </div>
+                    <input type="submit" value="Submit Quiz" class="submit-button">
+                </form>
+            </div>
         </div>
 
     </div> <!-- End of main-content -->
@@ -81,7 +128,8 @@
     <!-- Table -->
     <div id="species-table">
         <h2>Common Octopus Species</h2>
-        <table border="1">
+            <!-- <table border="1" style="width: 95%;" align="center"> -->
+            <table>
             <tr>
                 <th>Species</th>
                 <th>Location</th>
