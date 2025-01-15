@@ -1,1 +1,3 @@
 There were a lot of challenges faced with this project, becuase the work was very tedious with the changes. I spent a while with exacting colors, font size, and font format. Chat Gpt helped with some of those challenges, but overall I beleive there were easier way I could've used to update the html code with the css code. A huge challenge I faced was making the rows different colors on the species table. Also, correcting the format of the quiz section. 
+
+I beleive if I had more time, I would be able to get the code to reflect the exact screenshot. 
